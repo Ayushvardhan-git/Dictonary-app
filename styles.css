@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:not(i) {
+  font-family: Helvetica, sans-serif, sans-serif;
+}
+
+body {
+  background-color: #ae9cff;
+}
+
+.container {
+  background-color: white;
+  width: 90vmin;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 80px 50px;
+  border-radius: 10px;
+  box-shadow: 0px 20px 40px rgba(38, 33, 61, 0.3);
+}
+
+.search-Box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-Box input {
+  padding: 5px;
+  width: 70%;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid #ae9cff;
+  font-size: 16px;
+}
+
+.search-Box button {
+  padding: 10px 5px;
+  width: 25%;
+  border: none;
+  background-color: #ae9cff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.result {
+  position: relative;
+}
+
+.result h4 {
+  font-size: 30px;
+}
+
+.result .word {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.result button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  color: #ae9cff;
+  font-size: 16px;
+}
+
+.result .details {
+  color: #b3b6b4;
+  display: flex;
+  gap: 10px;
+  padding: 5px 0 20px 0;
+  font-size: 14px;
+}
+
+.word-meaning {
+  color: #575a5b;
+}
+
+.word-example {
+  color: #575a5b;
+  font-style: italic;
+  margin-top: 30px;
+  border-left: 3px solid #63bedc;
+  padding-left: 20px;
+}
+
+.error {
+  margin-top: 40px;
+  size: 12px;
+}
+.bar {
+  height: 4px;
+  background-color: rgb(255, 251, 0);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.fContent {
+  text-align: center;
+  size: 8px;
+  margin-top: 6px;
+  margin-bottom: 14px;
+  color: white;
+}
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+/* http://127.0.0.1:5500/index.html */
+
+/* New Learning */
+/* 7. Avoiding Horizontal Scroll
+
+In fluid layouts, especially within a container that has padding or margins, setting width: 100%; helps avoid unintentional horizontal scrolling by ensuring the element doesn't exceed the viewport or parent container width.
+
+css
+
+.container {
+    width: 100%;
+    padding: 10px;
+    overflow-x: hidden;
+} */
